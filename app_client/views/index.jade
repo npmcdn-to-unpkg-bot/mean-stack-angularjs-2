@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.24/system.js')
+		script(src='https://npmcdn.com/rxjs@5.0.0-beta.2/bundles/Rx.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/angular2-polyfills.min.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/angular2.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/http.js')
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.17/router.js')
+		script(src='https://npmcdn.com/angular2@2.0.0-beta.17/es6/dev/src/testing/shims_for_IE.js')
+		script(src='/js/app/bundle.js')
+	body
+		my-app Loading
+		script.
+			System.import('boot')
+			.then(null, console.error.bind(console));
